@@ -39,19 +39,33 @@ var log = console.log;
 		document.body.appendChild(btn);
 
 		/*Functionalities of the button*/
-		var attr = document.createAttribute("onclick");
+		/*var attr = document.createAttribute("onclick");
 		attr.value = "submit()";
 		var h = document.getElementByTagName("button")[0];
-		h.setAttributeNode(attr)
-
-
-		function submit(){
-		alert(`Thank you for confirming!`);
+		h.setAttributeNode(attr)*/
+		btn.addEventListener('click', function(clicky){
+			alert(`Thank you for confirming!`);
+		});
 		
-	};
-
 
 	// If Else Statement
 
 // Create a conditional statement that gives a user some options whether they will subscribe to a monthly subscription based on given benefits as a subscriber (you can choose any product/services for this scenario)
+		
+		alert(`We will now give you choice, and the following choice will benefit you. Are you ready?`);
+		let userAnswer = prompt(`Type "y" to proceed. Otherwise, type "n".`);
+		// Customer Answer Yes at first;
+		if(userAnswer === y || userAnswer === Y){
+			let userAnswer1 prompt(`The first benefit is for our new customers. Are you a new customer?`){
+				if(userAnswer === y || userAnswer === Y){
 
+				};
+							};
+				else if(userAnswer === n || userAnswer === N){  
+							console.log(`I'm sorry you don't want our benefits. Thank you for your interest in visiting our website!`)};
+		} else if(userAnswer === n || userAnswer === N){  
+			alert(`I'm sorry you don't want our benefits. Thank you for your interest in visiting our website!`);
+		}
+		else {  
+			alert(``)
+				};
