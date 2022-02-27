@@ -42,9 +42,10 @@ var log = console.log;
 		/*Functionalities of the button*/
 		/*var attr = document.createAttribute("onclick");
 		attr.value = "submit()";
-		var h = document.getElementByTagName("button")[0];
+		var h = document.getElementsByTagName("button")[0];
 		h.setAttributeNode(attr)*/
-		btn.addEventListener('click', function(clicky){
+		btn.addEventListener('click', function(clicky)
+		{
 			alert(`Thank you for confirming!`);
 
 			// If Else Statement
@@ -98,31 +99,71 @@ var log = console.log;
 					alert(`From the bottom of our hearts, thank you so very much for your time!`);
 
 
-		h1.remove();
-		var btn1 = document.getElementsByTagName("button")[0];
-		btn1.remove();
-		var h33 = document.getElementById("head3");
-		var p11 = document.getElementById("para1");
-		var p22 = document.getElementById("para2");
-		var p33 = document.getElementById("para3");
+				h1.remove();
+				var btn1 = document.getElementsByTagName("button")[0];
+				btn1.remove();
+				var h33 = document.getElementById("head3");
+				var p11 = document.getElementById("para1");
+				var p22 = document.getElementById("para2");
+				var p33 = document.getElementById("para3");
 				
-		// Switch case statement
-		// Create a conditional statements that will give the user options base on their needs followed by executing the codes based on the chosen option
+				// Switch case statement
+				// Create a conditional statements that will give the user options base on their needs followed by executing the codes based on the chosen option
 
 					// Addtl buttons for options
 					var btnOp1 = document.createElement("button");
 					btnOp1.innerHTML = "Choose Package 1";
 					btnOp1.type = "submit";
-					btnOp1.name = "formBtn";
+					btnOp1.name = "formBtn1";
 					document.body.appendChild(btnOp1)[4];
-					
+					btnOp1.addEventListener('click', function(clicky1)
+					{
+						alert(`Package 1 on your way! Thank you!`);
+						h33.remove();
+						p11.remove();
+						p22.remove();
+						p33.remove();
+						btnOp1.remove();
+						btnOp2.remove();
+						var h11 = document.getElementById("head2");
+						h11.innerHTML = "Congratulations! You have passed through the next phase!";
+						var btnOp11 = document.createElement("button");
+						btnOp11.innerHTML = "Choose Package 2";
+						btnOp11.type = "submit";
+						btnOp11.name = "formBtn11";
+						document.body.appendChild(btnOp2)[6];
+						btnOp11.addEventListener('click', function(clicky11){});
+
+
+					});
+
 
 					var btnOp2 = document.createElement("button");
 					btnOp2.innerHTML = "Choose Package 2";
 					btnOp2.type = "submit";
-					btnOp2.name = "formBtn";
-					document.body.appendChild(btnOp2)[6]
+					btnOp2.name = "formBtn2";
+					document.body.appendChild(btnOp2)[6];
+					btnOp1.addEventListener('click', function(clicky2)
+					{
+						alert(`Package 2 on your way! Thank you!`);
+						h33.remove();
+						p11.remove();
+						p22.remove();
+						p33.remove();
+						btnOp1.remove();
+						btnOp2.remove();
+						var h11 = document.getElementById("head2");
+						h11.innerHTML = "Congratulations! You have passed through the next phase!";
+						var btnOp22 = document.createElement("button");
+						btnOp22.innerHTML = "Let's Start!";
+						btnOp22.type = "submit";
+						btnOp22.name = "formBtn22";
+						document.body.appendChild(btnOp2)[6];
+						btnOp22.addEventListener('click', function(clicky22){});
 
+					});
+					
+					
 
 			switch(userAnswer1){
 				case `y`: 
@@ -141,12 +182,10 @@ var log = console.log;
 					btnOp1.remove();
 					btnOp2.remove();
 			};
-/*			console.log(userAnswer);
-			console.log(userAnswer1);
-			console.log(userAnswer2);*/
 
 		});
-		
+
+// For Loop
 
 
 
